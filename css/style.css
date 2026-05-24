@@ -101,7 +101,22 @@ body {
     display: flex;
     gap: 10px;
 }
+.whatsapp-btn {
+    background: #25d366 !important; /* Authentic WhatsApp Green */
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3) !important;
+}
 
+/* Flex adjustment to handle three layout items side-by-side cleanly */
+@media (max-width: 480px) {
+    .button-strip {
+        flex-direction: row;
+        gap: 6px;
+    }
+    .phone-btn {
+        font-size: 0.95rem; /* Slightly fits fonts tighter on narrow displays */
+        padding: 10px 2px;
+    }
+}
 .phone-btn {
     flex: 1;
     display: flex;

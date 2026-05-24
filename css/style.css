@@ -48,10 +48,22 @@ body {
 }
 
 .main-title {
-    font-family: 'Yatra One', cursive;
-    font-size: 1.8rem;
+    font-family: 'Martel', serif;
+    font-weight: 900; /* Makes it look thick and royal like the flyer */
+    font-size: 2rem;
     color: var(--gold-callout);
     margin-bottom: 2px;
+    letter-spacing: 0.5px;
+}
+
+.logo-main-text {
+    display: block;
+    font-family: 'Martel', serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #ff9f1c; /* Marigold Gold */
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
 }
 
 .tagline {
@@ -202,14 +214,6 @@ body {
     z-index: 2;
 }
 
-.logo-main-text {
-    display: block;
-    font-family: 'Yatra One', cursive;
-    font-size: 1.1rem;
-    color: #ff9f1c; /* Marigold Gold */
-    letter-spacing: 0.5px;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
-}
 
 .logo-sub-text {
     display: block;

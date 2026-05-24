@@ -141,6 +141,93 @@ body {
 .phone-btn:hover {
     background: #000000;
 }
+/* Premium Visual Logo Styling */
+.visual-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px auto 15px auto;
+    position: relative;
+    max-width: 200px;
+}
+
+/* Glowing Aura Layer behind the Logo Symbol */
+.sacred-aura {
+    position: absolute;
+    top: 5px;
+    width: 75px;
+    height: 75px;
+    background: radial-gradient(circle, rgba(255,159,28,0.4) 0%, rgba(255,255,255,0) 70%);
+    border-radius: 50%;
+    animation: auraGlow 3s infinite ease-in-out;
+}
+
+/* Golden Circular Frame for the Icons */
+.logo-emblem {
+    width: 70px;
+    height: 70px;
+    background: radial-gradient(circle, #ffffff 20%, #fff4da 100%);
+    border: 3px double #ff9f1c;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+/* Positioning the Kalash and Swastik Overlay */
+.emblem-art {
+    font-size: 2.4rem;
+    position: relative;
+    line-height: 1;
+}
+
+.inner-swastik {
+    position: absolute;
+    font-size: 0.9rem;
+    color: #c20017; /* Traditional Red Swastik */
+    font-weight: bold;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+
+/* Integrated Typography Layer for the Logo Branding */
+.logo-text-block {
+    margin-top: 6px;
+    text-align: center;
+    z-index: 2;
+}
+
+.logo-main-text {
+    display: block;
+    font-family: 'Yatra One', cursive;
+    font-size: 1.1rem;
+    color: #ff9f1c; /* Marigold Gold */
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+.logo-sub-text {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: -2px;
+    opacity: 0.9;
+}
+
+/* Subtle Pulsing Aura Animation */
+@keyframes auraGlow {
+    0% { transform: scale(1); opacity: 0.4; }
+    50% { transform: scale(1.2); opacity: 0.8; }
+    100% { transform: scale(1); opacity: 0.4; }
+}
 
 .icon-ring {
     margin-right: 5px;
